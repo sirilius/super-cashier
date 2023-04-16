@@ -490,8 +490,46 @@ class Transaction:
             table.add_row(
                 [nama_item, jumlah_item, harga_per_item, harga_total])
         print(table)
+
+        # Menampilkan total harga belanjaan sebelum mendapatkan diskon/jika tidak mendapatkan diskon
         print(
-            f"Total belanja yang harus dibayarkan: {sum(self.daftar_belanja['harga_total'])}")
+            f"Total harga belanjaan yang harus dibayarkan: {sum(self.daftar_belanja['harga_total'])}")
+
+        def apply_discount(discount_percentage):
+            """
+            Fungsi untuk menghitung total harga belanjaan setelah mendapatkan diskon.
+
+            Attributes
+            ----------
+            discount_percentage : float
+                Persentase diskon yang diberikan dalam bentuk desimal (contoh: 10% = 0.1)
+
+            total_harga : float
+                Total harga belanjaan sebelum mendapatkan diskon.
+
+            potongan_harga : float
+                Jumlah potongan harga yang didapatkan.
+
+            harga_setelah_diskon : float
+                Total harga belanjaan setelah mendapatkan diskon.            
+            """
+
+            total_harga = sum(self.daftar_belanja['harga_total'])
+            potongan_harga = total_harga * discount_percentage
+            harga_setelah_diskon = total_harga - potongan_harga
+            print(
+                f"Total harga belanjaan yang harus dibayarkan: {harga_setelah_diskon}")
+
+        # Menerapkan diskon berdasarkan total harga belanjaan
+        if sum(self.daftar_belanja['harga_total']) > 500000:
+            print("Selamat anda mendapatkan diskon 10%")
+            apply_discount(0.1)
+        elif sum(self.daftar_belanja['harga_total']) > 300000:
+            print("Selamat anda mendapatkan diskon 8%")
+            apply_discount(0.08)
+        elif sum(self.daftar_belanja['harga_total']) > 200000:
+            print("Selamat anda mendapatkan diskon 5%")
+            apply_discount(0.05)
 
 
 Transaction()
