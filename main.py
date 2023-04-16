@@ -386,7 +386,7 @@ class Transaction:
         # Menampilkan pesan konfirmasi bahwa seluruh transactions telah direset
         print("\n")
         print("-"*47)
-        print("----- Seluruh transactions berhasil direset! -----")
+        print("----- Seluruh transaksi berhasil direset! -----")
         print("-"*47)
 
     def check_order(self):
