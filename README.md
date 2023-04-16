@@ -2,15 +2,11 @@
 
 ## Background
 
----
-
 Aplikasi kasir self-service dengan menggunakan Python. Dengan Super Cashier, Customer dapat dengan mudah **menambah**, **menghapus**, **mengubah**, dan melakukan **checkout** pada item belanjaan mereka.
 
 ![alt text](img/opening-screenshot.png)
 
 ## Requirements
-
----
 
 Sebelum menggunakan Super Cashier, pastikan sudah terinstall:
 
@@ -20,8 +16,6 @@ Sebelum menggunakan Super Cashier, pastikan sudah terinstall:
 - SQLAlchemy
 
 ## Cara Menggunakan
-
----
 
 1. Clone repository ini
 
@@ -35,8 +29,6 @@ Sebelum menggunakan Super Cashier, pastikan sudah terinstall:
 
 ## Tools
 
----
-
 **Language:**
 
 - Python
@@ -47,8 +39,6 @@ Sebelum menggunakan Super Cashier, pastikan sudah terinstall:
 - SQLAlchemy
 
 ## Objective
-
----
 
 **Learning objective:**
 
@@ -68,8 +58,6 @@ Sebelum menggunakan Super Cashier, pastikan sudah terinstall:
 
 ## Code Flow
 
----
-
 1. User memulai program Super Cashier.
 2. Program menampilkan menu utama pilihan aksi yang dapat dilakukan oleh user: "Tambah item", "Hapus item", "Update nama item", "Update jumlah item", "Update harga item", "Reset transactions", "Check order", "Check out", dan "Keluar".
 3. User memilih salah satu dari opsi yang tersedia di menu utama.
@@ -84,8 +72,6 @@ Sebelum menggunakan Super Cashier, pastikan sudah terinstall:
 12. Jika user memilih "Keluar", program akan keluar dari program Super Cashier.
 
 ## Code Overview
-
----
 
 ### 1. Import library yang dibutuhkan
 
@@ -691,7 +677,5 @@ def apply_discount(discount_percentage):
    ![alt text](img/test-4.png)
 
 ## Conclusion
-
----
 
 Super Cashier adalah sebuah aplikasi kasir self-service yang dirancang untuk memudahkan pengguna dalam menambah, menghapus, mengubah, dan checkout pada item belanjaan mereka. Dalam pengembangan aplikasi ini, bahasa pemrograman Python dan modul pendukung seperti PrettyTable dan SQLAlchemy digunakan. Tujuan dibuatnya aplikasi ini adalah untuk memberikan kemudahan dan efisiensi dalam melakukan transaksi belanja pada pengguna.
